@@ -1,0 +1,161 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	font-family: "Nunito Sans", sans-serif;
+	background: linear-gradient(135deg, #000, 20%, #261d46);
+	color: rgb(178, 236, 178);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.container {
+	width: 100%;
+	max-width: 550px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2em;
+	color: aquamarine;
+	margin-bottom: 10px;
+}
+
+.subtitle {
+	color: gray;
+	margin-bottom: 25px;
+	font-size: 0.9em;
+}
+
+.converter {
+	background: #000;
+	border: 3px solid dimgray;
+	border-radius: 15px;
+	padding: 25px;
+	box-shadow: 0 0 20px darkblue;
+}
+
+label {
+	display: block;
+	text-align: left;
+	color: lightgray;
+	font-size: 0.9em;
+	outline: none;
+}
+
+select,
+input {
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 20px;
+	background: #261d46;
+	color: azure;
+	border: 2px solid lightslategray;
+	border-radius: 10px;
+	font-size: 0.9em;
+	outline: none;
+}
+
+select:focus,
+input:focus {
+	border-color: aquamarine;
+}
+
+.unit-row {
+	display: flex;
+	align-items: end;
+	gap: 10px;
+}
+
+.unit-box {
+	flex: 1;
+}
+
+.swap-btn {
+	width: 50px;
+	height: 50px;
+	margin-bottom: 20px;
+	background: #261d46;
+	color: aquamarine;
+	border: 2px solid aquamarine;
+	border-radius: 10px;
+	font-size: 1em;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.swap-btn:hover {
+	background: aquamarine;
+	color: #000;
+	transform: rotate(180deg);
+}
+
+.result-box {
+	margin-top: 5px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	background: #261d46;
+	border: 2px solid lightgray;
+	border-radius: 10px;
+}
+
+.result-box span {
+	color: gray;
+	font-size: 0.9em;
+}
+
+.result-box h2 {
+	margin-top: 10px;
+	color: gold;
+	font-size: 2em;
+	word-break: break-word;
+}
+
+.btns {
+	display: flex;
+	gap: 10px;
+}
+
+.btns button {
+	flex: 1;
+	padding: 15px;
+	border-radius: 10px;
+	font-size: 0.9em;
+	font-weight: 800;
+    transition: 0.3s;
+	cursor: pointer;
+}
+
+.convert-btn {
+    background: aquamarine;
+    color: #5f6666;
+    border: #5f6666;
+}
+
+.convert-btn:hover{
+    background: #261d46;
+    color: aquamarine;
+}
+
+.clear-btn{
+    background: #261d46;
+    color: aliceblue;
+    border: 2px solid darkgrey;
+}
+
+.clear-btn:hover{
+	background: whitesmoke;
+	color: #000;
+}
+
+.footer{
+	margin-top: 20px;
+	color: gray;
+	font-size: 0.9em;
+}

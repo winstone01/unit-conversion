@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Unit Convertor</title>
+	</head>
+	<body>
+		<main class="container">
+			<h1>Winstone's Unit Convertor</h1>
+			<p class="subtitle">Simple . Fast . Easy</p>
+			<section class="converter">
+				<label for="category">Select Category</label>
+				<select name="" id="category">
+					<option value="">Select a category</option>
+					<option value="length">Length</option>
+					<option value="weight">Weight</option>
+					<option value="temperature">Temperature</option>
+					<option value="time">Time</option>
+					<option value="data">Data</option>
+				</select>
+				<label for="inputValue">Enter Value</label>
+				<input type="text" id="inputValue" placeholder="Please Enter value here..." />
+				<article class="unit-row">
+					<div class="unit-box">
+						<label for="fromUnit">From</label>
+						<select name="" id="fromUnit"></select>
+					</div>
+					<button id="swapBtn" class="swap-btn" title="Swap Units">
+						<i class="fa-solid fa-arrow-right-arrow-left"></i>
+					</button>
+					<div class="unit-box">
+						<label for="toUnit">To</label>
+						<select name="" id="toUnit"></select>
+					</div>
+				</article>
+				<article class="result-box">
+					<span>Result</span>
+					<h2 id="result">0</h2>
+				</article>
+				<article class="btns">
+					<button class="convert-btn" id="convertBtn">Convert</button>
+					<button class="clear-btn" id="clearBtn">Clear</button>
+				</article>
+			</section>
+            <p class="footer">Build with HTML . CSS . javaScript and 💞 by Winstone </p>
+		</main>
+		<script src="./script.js"></script>
+	</body>
+</html>
